@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>𓋼𓋼𓋼</title>
+    <style>
+        body, div, p {
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 10px;
+        }
+        br {
+            display: block;
+            margin-bottom: 15px;
+            margin-top: 0px;
+        }
+        #messageContainer {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 70%;
+            z-index: 2; /* Place the message container above the canvas */
+            color: black;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Place the canvas behind the message container */
+        }
+        #finalImage {
+            display: none;
+            margin-top: 20px;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div id="messageContainer">
+        <p id="message"></p>
+        <img id="finalImage" src="images/equipo.png" alt="Equipo">
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
